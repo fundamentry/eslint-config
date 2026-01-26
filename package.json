@@ -1,10 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/package",
-  "name": "@fundamentry/eslint-config-1",
+  "name": "@fundamentry/eslint-config",
   "description": "Shareable and extensible ESLint configurations.",
   "repository": {
     "type": "git",
-    "url": "git@github.com:fundamentry/eslint-config-1.git"
+    "url": "git@github.com:fundamentry/eslint-config.git"
   },
   "contributors": [
     {
