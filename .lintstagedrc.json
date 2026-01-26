@@ -1,0 +1,5 @@
+{
+  "*.{ts,js,json}": [
+    "pnpm lint:staged:fix"
+  ]
+}

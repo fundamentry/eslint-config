@@ -1,0 +1,14 @@
+.DS_Store
+
+.github
+.husky
+.vscode
+
+lib
+node_modules
+
+README.md
+
+!.*.json
+
+package-lock.json
