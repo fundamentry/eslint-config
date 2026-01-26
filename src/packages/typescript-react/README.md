@@ -1,6 +1,6 @@
 # `@fundamentry/eslint-config-typescript-react`
 
-TypeScript ESLint configuration.
+TypeScript React ESLint configuration.
 
 ## Installation
 
