@@ -63,7 +63,7 @@
         ],
         "pathGroups": [
           {
-            "pattern": "@aldra-consulting/*",
+            "pattern": "@fundamentry/*",
             "group": "internal",
             "position": "before"
           },
@@ -74,7 +74,7 @@
           }
         ],
         "pathGroupsExcludedImportTypes": [
-          "@aldra-consulting/*",
+          "@fundamentry/*",
           "@(app|src|project)/*"
         ],
         "distinctGroup": true,
