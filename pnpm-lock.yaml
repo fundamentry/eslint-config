@@ -18,6 +18,9 @@ importers:
       '@commitlint/config-conventional':
         specifier: ^20.3.1
         version: 20.3.1
+      '@fundamentry/eslint-config-json':
+        specifier: workspace:*
+        version: link:src/packages/json
       '@fundamentry/typescript-config':
         specifier: ^1.0.0
         version: 1.0.0

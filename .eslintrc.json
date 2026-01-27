@@ -17,7 +17,8 @@
     "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:import/typescript"
+    "plugin:import/typescript",
+    "@fundamentry/eslint-config-json"
   ],
   "plugins": [
     "@typescript-eslint",
@@ -101,44 +102,5 @@
         "fixStyle": "inline-type-imports"
       }
     ]
-  },
-  "overrides": [
-    {
-      "files": [
-        "*.json"
-      ],
-      "plugins": [
-        "json-format"
-      ],
-      "settings": {
-        "json/json-with-comments-files": [],
-        "json/sort-package-json": [
-          "$schema",
-          "name",
-          "version",
-          "description",
-          "repository",
-          "homepage",
-          "bugs",
-          "author",
-          "contributors",
-          "license",
-          "private",
-          "engines",
-          "publishConfig",
-          "files",
-          "main",
-          "module",
-          "types",
-          "exports",
-          "workspaces",
-          "scripts",
-          "dependencies",
-          "peerDependencies",
-          "devDependencies",
-          "overrides"
-        ]
-      }
-    }
-  ]
+  }
 }
