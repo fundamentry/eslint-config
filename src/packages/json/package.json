@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@fundamentry/eslint-config-json",
+  "version": "1.0.0-x",
+  "description": "JSON ESLint configuration.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fundamentry/eslint-config.git"
+  },
+  "contributors": [
+    {
+      "name": "Alexander Zakharov (azaxarov)",
+      "email": "alexander.zakharov@fundamentry.org"
+    }
+  ],
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=10"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "run-s clean compile",
+    "clean": "run-p clean:lib",
+    "clean:lib": "rimraf lib",
+    "compile": "tsc",
+    "prepublishOnly": "run-s build"
+  },
+  "peerDependencies": {
+    "eslint": "^8",
+    "eslint-plugin-json-format": "^2"
+  }
+}
