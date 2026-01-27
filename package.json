@@ -26,6 +26,7 @@
     "lint:eslint:staged:fix": "eslint --ext ts,js,json --fix",
     "lint:fix": "run-p lint:eslint:fix",
     "lint:staged:fix": "run-p lint:eslint:staged:fix -- {@}",
+    "postversion": "pnpm i --lockfile-only && git add pnpm-lock.yaml && git commit --amend --no-edit",
     "prepare": "husky",
     "update": "lernaupdate"
   },
