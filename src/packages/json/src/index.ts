@@ -4,6 +4,7 @@ export = {
   root: true,
   noInlineConfig: true,
   reportUnusedDisableDirectives: true,
+  ignorePatterns: ['!.*.json', '**/package-lock.json'],
   overrides: [
     {
       files: ['*.json'],
