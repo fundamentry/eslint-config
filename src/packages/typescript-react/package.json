@@ -31,12 +31,5 @@
   },
   "dependencies": {
     "@fundamentry/eslint-config-typescript": "workspace:*"
-  },
-  "peerDependencies": {
-    "eslint-config-airbnb": "^19",
-    "eslint-plugin-jsx-a11y": "^6",
-    "eslint-plugin-react": "^7",
-    "eslint-plugin-react-hooks": "^5",
-    "typescript": "^5"
   }
 }
