@@ -21,6 +21,9 @@ importers:
       '@fundamentry/eslint-config-json':
         specifier: workspace:*
         version: link:src/packages/json
+      '@fundamentry/eslint-config-typescript':
+        specifier: workspace:*
+        version: link:src/packages/typescript
       '@fundamentry/typescript-config':
         specifier: ^1.0.0
         version: 1.0.0
@@ -48,6 +51,9 @@ importers:
       eslint-import-resolver-typescript:
         specifier: ^4.4.4
         version: 4.4.4(eslint-plugin-import@2.32.0)(eslint@8.57.1)
+      eslint-plugin-deprecation:
+        specifier: ^3.0.0
+        version: 3.0.0(eslint@8.57.1)(typescript@5.9.3)
       eslint-plugin-import:
         specifier: ^2.32.0
         version: 2.32.0(@typescript-eslint/parser@8.53.1(eslint@8.57.1)(typescript@5.9.3))(eslint-import-resolver-typescript@4.4.4)(eslint@8.57.1)
