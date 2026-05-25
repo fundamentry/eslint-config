@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-typescript@1.0.0...@fundamentry/eslint-config-typescript@1.1.0) (2026-05-25)
+
+### Features
+
+- **packages/typescript:** use exact package versions ([b7cf91e](https://github.com/fundamentry/eslint-config/commit/b7cf91ef096b71816a68bf1d2951638eec797acc))
+
 # 1.0.0 (2026-01-26)
 
 ### Features
