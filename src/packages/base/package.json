@@ -30,7 +30,7 @@
     "prepublishOnly": "run-s build"
   },
   "peerDependencies": {
-    "eslint": "^8",
-    "eslint-config-airbnb-base": "^15"
+    "eslint": "8.57.1",
+    "eslint-config-airbnb-base": "15.0.0"
   }
 }

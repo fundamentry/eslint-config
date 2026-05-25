@@ -91,10 +91,10 @@ importers:
   src/packages/base:
     dependencies:
       eslint:
-        specifier: ^8
+        specifier: 8.57.1
         version: 8.57.1
       eslint-config-airbnb-base:
-        specifier: ^15
+        specifier: 15.0.0
         version: 15.0.0(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.53.1(eslint@8.57.1)(typescript@5.9.3))(eslint-import-resolver-typescript@4.4.4)(eslint@8.57.1))(eslint@8.57.1)
 
   src/packages/json:
