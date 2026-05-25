@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@fundamentry/eslint-config-prettier",
+  "version": "1.0.0-x",
+  "description": "Prettier ESLint configuration.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fundamentry/eslint-config.git"
+  },
+  "contributors": [
+    {
+      "name": "Alexander Zakharov (azaxarov)",
+      "email": "alexander.zakharov@fundamentry.org"
+    }
+  ],
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=10"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "run-s clean compile",
+    "clean": "run-p clean:lib",
+    "clean:lib": "rimraf lib",
+    "compile": "tsc",
+    "prepublishOnly": "run-s build"
+  },
+  "peerDependencies": {
+    "eslint": "8.57.1",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-prettier": "5.5.5",
+    "prettier": "3.8.3"
+  }
+}
