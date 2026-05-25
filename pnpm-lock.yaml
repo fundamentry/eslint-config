@@ -21,6 +21,9 @@ importers:
       '@fundamentry/eslint-config-json':
         specifier: workspace:*
         version: link:src/packages/json
+      '@fundamentry/eslint-config-prettier':
+        specifier: workspace:*
+        version: link:src/packages/prettier
       '@fundamentry/eslint-config-typescript':
         specifier: workspace:*
         version: link:src/packages/typescript

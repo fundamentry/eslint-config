@@ -36,6 +36,7 @@
     "@commitlint/cli": "^20.3.1",
     "@commitlint/config-conventional": "^20.3.1",
     "@fundamentry/eslint-config-json": "workspace:*",
+    "@fundamentry/eslint-config-prettier": "workspace:*",
     "@fundamentry/eslint-config-typescript": "workspace:*",
     "@fundamentry/typescript-config": "^1.0.0",
     "@types/eslint": "^8.56.12",

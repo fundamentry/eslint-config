@@ -13,24 +13,12 @@
   "extends": [
     "@fundamentry/eslint-config-json",
     "@fundamentry/eslint-config-typescript",
-    "prettier"
-  ],
-  "plugins": [
-    "prettier"
+    "@fundamentry/eslint-config-prettier"
   ],
   "settings": {
     "import/internal-regex": "^@project"
   },
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "semi": true,
-        "singleQuote": true,
-        "arrowParens": "avoid",
-        "trailingComma": "es5"
-      }
-    ],
     "import/order": [
       "error",
       {
