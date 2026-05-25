@@ -100,10 +100,10 @@ importers:
   src/packages/json:
     dependencies:
       eslint:
-        specifier: ^8
+        specifier: 8.57.1
         version: 8.57.1
       eslint-plugin-json-format:
-        specifier: ^2
+        specifier: 2.0.1
         version: 2.0.1(eslint@8.57.1)
 
   src/packages/typescript:
