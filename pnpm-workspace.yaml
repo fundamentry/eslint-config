@@ -5,6 +5,9 @@ allowBuilds:
   nx: false
   unrs-resolver: false
 
+overrides:
+  js-yaml@4.1.1: "4.2.0"
+
 minimumReleaseAgeExclude:
   - '@typescript-eslint/eslint-plugin@8.60.0'
   - '@typescript-eslint/parser@8.60.0'
