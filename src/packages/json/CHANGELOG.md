@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-json@1.2.0...@fundamentry/eslint-config-json@1.3.0) (2026-06-17)
+
+### Features
+
+- **packages/json:** order 'packageManager' and 'peerDependenciesMeta' properties ([39062e2](https://github.com/fundamentry/eslint-config/commit/39062e2dd7d7a1f3709b7a9b408e3f6b1060bc61))
+
 # [1.2.0](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-json@1.1.2...@fundamentry/eslint-config-json@1.2.0) (2026-05-25)
 
 ### Features

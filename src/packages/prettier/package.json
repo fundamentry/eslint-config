@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package",
   "name": "@fundamentry/eslint-config-prettier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prettier ESLint configuration.",
   "repository": {
     "type": "git",
