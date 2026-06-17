@@ -19,3 +19,4 @@ minimumReleaseAgeExclude:
   - '@typescript-eslint/typescript-estree@8.60.0'
   - '@typescript-eslint/utils@8.60.0'
   - '@typescript-eslint/visitor-keys@8.60.0'
+  - '@fundamentry/typescript-config@2.0.0'
