@@ -24,6 +24,7 @@ export = {
           'license',
           'private',
           'engines',
+          'devEngines',
           'packageManager',
           'publishConfig',
           'files',
