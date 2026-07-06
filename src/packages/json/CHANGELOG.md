@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-json@1.3.0...@fundamentry/eslint-config-json@1.4.0) (2026-07-06)
+
+### Features
+
+- add 'devEngines' key to 'package.json' sort order ([7c936c9](https://github.com/fundamentry/eslint-config/commit/7c936c93f99c7e18cb57664837f2535022a579a7))
+
 # [1.3.0](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-json@1.2.0...@fundamentry/eslint-config-json@1.3.0) (2026-06-17)
 
 ### Features
