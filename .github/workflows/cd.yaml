@@ -4,6 +4,17 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    inputs:
+      version:
+        type: choice
+        required: true
+        description: Semantic version value
+        default: patch
+        options:
+          - patch
+          - minor
+          - major
 
 concurrency:
   group: cd-${{ github.workflow }}-${{ github.ref }}
@@ -41,7 +52,7 @@ jobs:
         run: echo "count=$(pnpx lerna changed -p | wc -l | xargs)" >> "$GITHUB_OUTPUT"
 
       - name: Import GPG key
-        if: ${{ fromJson(steps.changes.outputs.count) > 0 }}
+        if: ${{ inputs.version || fromJson(steps.changes.outputs.count) > 0 }}
         uses: crazy-max/ghaction-import-gpg@v7
         id: gpg
         with:
@@ -52,8 +63,14 @@ jobs:
           git_commit_gpgsign: true
           git_tag_gpgsign: false # https://github.com/semantic-release/semantic-release/pull/1871
 
-      - name: Release
-        if: ${{ fromJson(steps.changes.outputs.count) > 0 }}
+      - name: Automatic release
+        if: ${{ !inputs.version && fromJson(steps.changes.outputs.count) > 0 }}
         run: pnpm lerna publish --yes
+        env:
+          GH_TOKEN: ${{ secrets.FUNDAMENTRY_BOT_TOKEN }}
+
+      - name: Manual release
+        if: ${{ inputs.version }}
+        run: pnpm lerna publish ${{ inputs.version }} --yes
         env:
           GH_TOKEN: ${{ secrets.FUNDAMENTRY_BOT_TOKEN }}
