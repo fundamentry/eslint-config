@@ -30,8 +30,8 @@
     "prepublishOnly": "run-s build"
   },
   "peerDependencies": {
-    "eslint": "8.57.1",
-    "eslint-config-airbnb-base": "15.0.0",
-    "eslint-plugin-import": "2.32.0"
+    "eslint": "catalog:",
+    "eslint-config-airbnb-base": "catalog:",
+    "eslint-plugin-import": "catalog:"
   }
 }
