@@ -1,4 +1,4 @@
-name: Release
+name: CD
 
 on:
   push:
@@ -6,56 +6,48 @@ on:
       - main
 
 concurrency:
-  group: release-${{ github.workflow }}-${{ github.ref }}
+  group: cd-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 env:
   HUSKY: 0
 
 jobs:
-  check:
-    name: Check
-    uses: ./.github/workflows/check.yaml
+  ci:
+    name: CI
+    uses: ./.github/workflows/ci.yaml
     secrets: inherit
 
   release:
     name: Release
+    needs:
+      - ci
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       contents: write
       packages: write
-    needs:
-      - check
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
-      - uses: pnpm/action-setup@v6
-
-      - uses: actions/setup-node@v6
+      - uses: ./.github/actions/setup
         with:
-          node-version: 24
-          registry-url: https://npm.pkg.github.com
-          cache: pnpm
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.FUNDAMENTRY_BOT_TOKEN }}
-
-      - name: Install dependencies
-        run: pnpm i
+          fundamentry-token: ${{ secrets.FUNDAMENTRY_BOT_TOKEN }}
 
       - name: Count changed packages
         id: changes
         run: echo "count=$(pnpx lerna changed -p | wc -l | xargs)" >> "$GITHUB_OUTPUT"
 
-      - name: Build all packages
+      - name: Build packages
         if: ${{ fromJson(steps.changes.outputs.count) > 0 }}
         run: pnpm build
 
-      - name: Import GPG key for Fundamentry Bot
-        id: gpg
-        uses: crazy-max/ghaction-import-gpg@v7
+      - name: Import GPG key
         if: ${{ fromJson(steps.changes.outputs.count) > 0 }}
+        uses: crazy-max/ghaction-import-gpg@v7
+        id: gpg
         with:
           gpg_private_key: ${{ secrets.FUNDAMENTRY_BOT_GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.FUNDAMENTRY_BOT_GPG_PASSPHRASE }}
