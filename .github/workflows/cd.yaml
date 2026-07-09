@@ -40,10 +40,6 @@ jobs:
         id: changes
         run: echo "count=$(pnpx lerna changed -p | wc -l | xargs)" >> "$GITHUB_OUTPUT"
 
-      - name: Build packages
-        if: ${{ fromJson(steps.changes.outputs.count) > 0 }}
-        run: pnpm build
-
       - name: Import GPG key
         if: ${{ fromJson(steps.changes.outputs.count) > 0 }}
         uses: crazy-max/ghaction-import-gpg@v7
