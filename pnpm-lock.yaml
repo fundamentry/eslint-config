@@ -208,10 +208,10 @@ importers:
   src/packages/json:
     dependencies:
       eslint:
-        specifier: 8.57.1
+        specifier: 'catalog:'
         version: 8.57.1
       eslint-plugin-json-format:
-        specifier: 2.0.1
+        specifier: 'catalog:'
         version: 2.0.1(eslint@8.57.1)
 
   src/packages/prettier:

@@ -30,7 +30,7 @@
     "prepublishOnly": "run-s build"
   },
   "peerDependencies": {
-    "eslint": "8.57.1",
-    "eslint-plugin-json-format": "2.0.1"
+    "eslint": "catalog:",
+    "eslint-plugin-json-format": "catalog:"
   }
 }
