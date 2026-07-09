@@ -141,12 +141,21 @@ importers:
       '@typescript-eslint/parser':
         specifier: 8.62.1
         version: 8.62.1(eslint@8.57.1)(typescript@6.0.3)
+      eslint:
+        specifier: 8.57.1
+        version: 8.57.1
+      eslint-config-airbnb-base:
+        specifier: 15.0.0
+        version: 15.0.0(eslint-plugin-import@2.32.0)(eslint@8.57.1)
       eslint-import-resolver-typescript:
         specifier: 4.4.5
         version: 4.4.5(eslint-plugin-import@2.32.0)(eslint@8.57.1)
       eslint-plugin-deprecation:
         specifier: 3.0.0
         version: 3.0.0(eslint@8.57.1)(typescript@6.0.3)
+      eslint-plugin-import:
+        specifier: 2.32.0
+        version: 2.32.0(@typescript-eslint/parser@8.62.1(eslint@8.57.1)(typescript@6.0.3))(eslint-import-resolver-typescript@4.4.5)(eslint@8.57.1)
       typescript:
         specifier: 6.0.3
         version: 6.0.3
