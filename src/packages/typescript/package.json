@@ -33,13 +33,13 @@
     "@fundamentry/eslint-config-base": "workspace:*"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "8.63.0",
-    "@typescript-eslint/parser": "8.63.0",
-    "eslint": "8.57.1",
-    "eslint-config-airbnb-base": "15.0.0",
-    "eslint-import-resolver-typescript": "4.4.5",
-    "eslint-plugin-deprecation": "3.0.0",
-    "eslint-plugin-import": "2.32.0",
-    "typescript": "6.0.3"
+    "@typescript-eslint/eslint-plugin": "catalog:",
+    "@typescript-eslint/parser": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-airbnb-base": "catalog:",
+    "eslint-import-resolver-typescript": "catalog:",
+    "eslint-plugin-deprecation": "catalog:",
+    "eslint-plugin-import": "catalog:",
+    "typescript": "catalog:"
   }
 }
