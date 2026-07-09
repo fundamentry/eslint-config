@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-base@1.1.1...@fundamentry/eslint-config-base@1.1.2) (2026-07-09)
+
+### Bug Fixes
+
+- **packages/base:** add missing peer dependency ([eb925be](https://github.com/fundamentry/eslint-config/commit/eb925bee5fc4ee9872e5fcc8dc94592526dc8748))
+
 ## [1.1.1](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-base@1.1.0...@fundamentry/eslint-config-base@1.1.1) (2026-06-17)
 
 **Note:** Version bump only for package @fundamentry/eslint-config-base

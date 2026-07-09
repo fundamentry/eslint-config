@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.4](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-typescript@1.1.3...@fundamentry/eslint-config-typescript@1.1.4) (2026-07-09)
+
+### Bug Fixes
+
+- **packages/typescript:** add missing peer dependencies ([2661cda](https://github.com/fundamentry/eslint-config/commit/2661cdac1bd1e03477a788f6ac28f9a27f606558))
+
 ## [1.1.3](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-typescript@1.1.2...@fundamentry/eslint-config-typescript@1.1.3) (2026-07-06)
 
 **Note:** Version bump only for package @fundamentry/eslint-config-typescript

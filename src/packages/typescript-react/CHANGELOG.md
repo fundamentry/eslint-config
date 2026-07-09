@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.10](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-typescript-react@1.0.9...@fundamentry/eslint-config-typescript-react@1.0.10) (2026-07-09)
+
+### Bug Fixes
+
+- **packages/typescript-react:** add missing peer dependencies ([e1cc7f6](https://github.com/fundamentry/eslint-config/commit/e1cc7f6c5677564a341c6985f101300f84afa96c))
+
 ## [1.0.9](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-typescript-react@1.0.8...@fundamentry/eslint-config-typescript-react@1.0.9) (2026-07-06)
 
 ### Bug Fixes
