@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.2](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-json@1.4.1...@fundamentry/eslint-config-json@1.4.2) (2026-07-09)
+
+**Note:** Version bump only for package @fundamentry/eslint-config-json
+
 ## [1.4.1](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-json@1.4.0...@fundamentry/eslint-config-json@1.4.1) (2026-07-09)
 
 **Note:** Version bump only for package @fundamentry/eslint-config-json
