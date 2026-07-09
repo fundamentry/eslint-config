@@ -54,6 +54,6 @@ jobs:
 
       - name: Release
         if: ${{ fromJson(steps.changes.outputs.count) > 0 }}
-        run: pnpx lerna publish --yes
+        run: pnpm lerna publish --yes
         env:
           GH_TOKEN: ${{ secrets.FUNDAMENTRY_BOT_TOKEN }}
