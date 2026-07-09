@@ -99,7 +99,7 @@ jobs:
           git_commit_gpgsign: true
           git_tag_gpgsign: false # https://github.com/semantic-release/semantic-release/pull/1871
 
-      - name: elease
-        run: pnpm lerna publish ${{ inputs.version }} --force-publish --yes
+      - name: Release
+        run: pnpm lerna publish ${{ inputs.version }} --force-conventional-graduate --yes
         env:
           GH_TOKEN: ${{ secrets.FUNDAMENTRY_BOT_TOKEN }}
