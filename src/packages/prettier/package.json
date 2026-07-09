@@ -30,9 +30,9 @@
     "prepublishOnly": "run-s build"
   },
   "peerDependencies": {
-    "eslint": "8.57.1",
-    "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-prettier": "5.5.5",
-    "prettier": "3.8.3"
+    "eslint": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "eslint-plugin-prettier": "catalog:",
+    "prettier": "catalog:"
   }
 }
