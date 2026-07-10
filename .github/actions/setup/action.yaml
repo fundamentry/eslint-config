@@ -17,6 +17,7 @@ runs:
     - shell: bash
       run: |
         pnpm config set //npm.pkg.github.com/:@fundamentry:_authToken "${{ inputs.fundamentry-token }}"
+        pnpm config set //npm.pkg.github.com/:_authToken "${{ inputs.fundamentry-token }}"
 
     - shell: bash
       run: pnpm install
