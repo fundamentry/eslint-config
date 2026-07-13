@@ -1,3 +1,7 @@
+## 1.1.7
+
+This was a version bump only for @fundamentry/eslint-config-base to align it with other projects, there were no code changes.
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

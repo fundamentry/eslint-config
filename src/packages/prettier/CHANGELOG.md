@@ -1,3 +1,7 @@
+## 1.0.6
+
+This was a version bump only for @fundamentry/eslint-config-prettier to align it with other projects, there were no code changes.
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

@@ -1,3 +1,9 @@
+## 1.0.16
+
+### 🧱 Updated Dependencies
+
+- Updated @fundamentry/eslint-config-typescript to 1.1.10
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

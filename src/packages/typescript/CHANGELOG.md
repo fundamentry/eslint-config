@@ -1,3 +1,9 @@
+## 1.1.10
+
+### 🧱 Updated Dependencies
+
+- Updated @fundamentry/eslint-config-base to 1.1.7
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
