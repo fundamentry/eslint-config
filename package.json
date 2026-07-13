@@ -21,7 +21,7 @@
   },
   "packageManager": "pnpm@11.10.0+sha512.0b7f8b98060031904c017e3a41eb187a16d40eeb829b95c4f8cb03681761fc4ab53dd219115b9b447f4dce1a05a214764461e7d3703392a9f32f9511ce8c86c8",
   "scripts": {
-    "build": "lerna run build",
+    "build": "nx run-many -t build",
     "commit": "cz",
     "lint": "run-p lint:eslint",
     "lint:eslint": "eslint --ext ts,js,json .",
@@ -29,8 +29,7 @@
     "lint:eslint:staged:fix": "eslint --ext ts,js,json --fix",
     "lint:fix": "run-p lint:eslint:fix",
     "lint:staged:fix": "run-p lint:eslint:staged:fix -- {@}",
-    "prepare": "husky",
-    "update": "lernaupdate"
+    "prepare": "husky"
   },
   "dependencies": {
     "eslint": "catalog:"
@@ -42,6 +41,7 @@
     "@fundamentry/eslint-config-prettier": "workspace:*",
     "@fundamentry/eslint-config-typescript": "workspace:*",
     "@fundamentry/typescript-config": "catalog:",
+    "@nx/js": "catalog:",
     "@types/eslint": "catalog:",
     "@typescript-eslint/eslint-plugin": "catalog:",
     "@typescript-eslint/parser": "catalog:",
@@ -59,10 +59,9 @@
     "eslint-plugin-react": "catalog:",
     "eslint-plugin-react-hooks": "catalog:",
     "husky": "catalog:",
-    "lerna": "catalog:",
-    "lerna-update-wizard": "catalog:",
     "lint-staged": "catalog:",
     "npm-run-all": "catalog:",
+    "nx": "catalog:",
     "prettier": "catalog:",
     "rimraf": "catalog:",
     "typescript": "catalog:"

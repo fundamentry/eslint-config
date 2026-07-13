@@ -1,0 +1,43 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "analytics": false,
+  "defaultBase": "main",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/lib"
+      ]
+    },
+    "nx-release-publish": {
+      "options": {
+        "registry": "https://npm.pkg.github.com",
+        "tag": "latest"
+      }
+    }
+  },
+  "release": {
+    "projectsRelationship": "independent",
+    "version": {
+      "conventionalCommits": true,
+      "updateDependents": "always"
+    },
+    "changelog": {
+      "projectChangelogs": {
+        "createRelease": "github",
+        "renderOptions": {
+          "authors": false,
+          "applyUsernameToAuthors": false,
+          "commitReferences": true,
+          "versionTitleDate": false
+        }
+      }
+    },
+    "git": {
+      "commitMessage": "chore(release): release [skip ci]"
+    }
+  }
+}

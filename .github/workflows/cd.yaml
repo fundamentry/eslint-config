@@ -29,49 +29,8 @@ jobs:
     uses: ./.github/workflows/ci.yaml
     secrets: inherit
 
-  automatic-release:
-    if: ${{ !inputs.version }}
-    name: Automatic release
-    needs:
-      - ci
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      contents: write
-      packages: write
-    steps:
-      - uses: actions/checkout@v7
-        with:
-          fetch-depth: 0
-
-      - uses: ./.github/actions/setup
-        with:
-          fundamentry-token: ${{ secrets.FUNDAMENTRY_BOT_TOKEN }}
-
-      - name: Count changed packages
-        id: changes
-        run: echo "count=$(pnpx lerna changed -p | wc -l | xargs)" >> "$GITHUB_OUTPUT"
-
-      - name: Import GPG key
-        if: ${{ fromJson(steps.changes.outputs.count) > 0 }}
-        uses: crazy-max/ghaction-import-gpg@v7
-        id: gpg
-        with:
-          gpg_private_key: ${{ secrets.FUNDAMENTRY_BOT_GPG_PRIVATE_KEY }}
-          passphrase: ${{ secrets.FUNDAMENTRY_BOT_GPG_PASSPHRASE }}
-          git_config_global: true
-          git_user_signingkey: true
-          git_commit_gpgsign: true
-          git_tag_gpgsign: false # https://github.com/semantic-release/semantic-release/pull/1871
-
-      - name: Release
-        run: pnpm lerna publish --yes
-        env:
-          GH_TOKEN: ${{ secrets.FUNDAMENTRY_BOT_TOKEN }}
-
-  manual-release:
-    if: ${{ inputs.version }}
-    name: Manual release
+  release:
+    name: Release
     needs:
       - ci
     runs-on: ubuntu-latest
@@ -97,9 +56,9 @@ jobs:
           git_config_global: true
           git_user_signingkey: true
           git_commit_gpgsign: true
-          git_tag_gpgsign: false # https://github.com/semantic-release/semantic-release/pull/1871
+          git_tag_gpgsign: true
 
       - name: Release
-        run: pnpm lerna publish ${{ inputs.version }} --force-conventional-graduate --yes
+        run: pnpm nx release --yes ${{ inputs.version }}
         env:
           GH_TOKEN: ${{ secrets.FUNDAMENTRY_BOT_TOKEN }}
