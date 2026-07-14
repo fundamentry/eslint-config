@@ -4,57 +4,52 @@
 
 - Updated @fundamentry/eslint-config-base to 1.1.7
 
-# Change Log
+## 1.1.9
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+This was a version bump only for @fundamentry/eslint-config-typescript to align it with other projects, there were no code changes.
 
-## [1.1.9](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-typescript@1.1.8...@fundamentry/eslint-config-typescript@1.1.9) (2026-07-10)
+## 1.1.8
 
-**Note:** Version bump only for package @fundamentry/eslint-config-typescript
+This was a version bump only for @fundamentry/eslint-config-typescript to align it with other projects, there were no code changes.
 
-## [1.1.8](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-typescript@1.1.7...@fundamentry/eslint-config-typescript@1.1.8) (2026-07-10)
+## 1.1.7
 
-**Note:** Version bump only for package @fundamentry/eslint-config-typescript
+This was a version bump only for @fundamentry/eslint-config-typescript to align it with other projects, there were no code changes.
 
-## [1.1.7](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-typescript@1.1.6...@fundamentry/eslint-config-typescript@1.1.7) (2026-07-09)
+## 1.1.6
 
-**Note:** Version bump only for package @fundamentry/eslint-config-typescript
+This was a version bump only for @fundamentry/eslint-config-typescript to align it with other projects, there were no code changes.
 
-## [1.1.6](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-typescript@1.1.5...@fundamentry/eslint-config-typescript@1.1.6) (2026-07-09)
+## 1.1.5
 
-**Note:** Version bump only for package @fundamentry/eslint-config-typescript
+This was a version bump only for @fundamentry/eslint-config-typescript to align it with other projects, there were no code changes.
 
-## [1.1.5](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-typescript@1.1.4...@fundamentry/eslint-config-typescript@1.1.5) (2026-07-09)
+## 1.1.4
 
-**Note:** Version bump only for package @fundamentry/eslint-config-typescript
+### 🩹 Fixes
 
-## [1.1.4](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-typescript@1.1.3...@fundamentry/eslint-config-typescript@1.1.4) (2026-07-09)
+- **packages/typescript:** add missing peer dependencies ([2661cda](https://github.com/fundamentry/eslint-config/commit/2661cda))
 
-### Bug Fixes
+## 1.1.3
 
-- **packages/typescript:** add missing peer dependencies ([2661cda](https://github.com/fundamentry/eslint-config/commit/2661cdac1bd1e03477a788f6ac28f9a27f606558))
+This was a version bump only for @fundamentry/eslint-config-typescript to align it with other projects, there were no code changes.
 
-## [1.1.3](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-typescript@1.1.2...@fundamentry/eslint-config-typescript@1.1.3) (2026-07-06)
+## 1.1.2
 
-**Note:** Version bump only for package @fundamentry/eslint-config-typescript
+This was a version bump only for @fundamentry/eslint-config-typescript to align it with other projects, there were no code changes.
 
-## [1.1.2](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-typescript@1.1.1...@fundamentry/eslint-config-typescript@1.1.2) (2026-06-17)
+## 1.1.1
 
-**Note:** Version bump only for package @fundamentry/eslint-config-typescript
+This was a version bump only for @fundamentry/eslint-config-typescript to align it with other projects, there were no code changes.
 
-## [1.1.1](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-typescript@1.1.0...@fundamentry/eslint-config-typescript@1.1.1) (2026-06-17)
+## 1.1.0
 
-**Note:** Version bump only for package @fundamentry/eslint-config-typescript
+### 🚀 Features
 
-# [1.1.0](https://github.com/fundamentry/eslint-config/compare/@fundamentry/eslint-config-typescript@1.0.0...@fundamentry/eslint-config-typescript@1.1.0) (2026-05-25)
+- **packages/typescript:** use exact package versions ([b7cf91e](https://github.com/fundamentry/eslint-config/commit/b7cf91e))
 
-### Features
+# 1.0.0
 
-- **packages/typescript:** use exact package versions ([b7cf91e](https://github.com/fundamentry/eslint-config/commit/b7cf91ef096b71816a68bf1d2951638eec797acc))
+### 🚀 Features
 
-# 1.0.0 (2026-01-26)
-
-### Features
-
-- **packages/typescript:** add package ([63b1f9f](https://github.com/fundamentry/eslint-config/commit/63b1f9fe1f590df3fb7d4ca7d2b3de8bb3cec84f))
+- **packages/typescript:** add package ([63b1f9f](https://github.com/fundamentry/eslint-config/commit/63b1f9f))
