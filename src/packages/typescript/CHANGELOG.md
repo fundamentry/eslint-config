@@ -1,3 +1,9 @@
+## 1.1.11
+
+### 🧱 Updated Dependencies
+
+- Updated @fundamentry/eslint-config-base to 1.1.8
+
 ## 1.1.10
 
 ### 🧱 Updated Dependencies

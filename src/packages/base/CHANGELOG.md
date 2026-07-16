@@ -1,3 +1,9 @@
+## 1.1.8
+
+### 🚀 Features
+
+- **packages/base:** sort import in ascending order ([3801f3c](https://github.com/fundamentry/eslint-config/commit/3801f3c))
+
 ## 1.1.7
 
 This was a version bump only for @fundamentry/eslint-config-base to align it with other projects, there were no code changes.
