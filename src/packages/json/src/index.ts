@@ -15,6 +15,7 @@ export = {
           '$schema',
           'name',
           'version',
+          'type',
           'description',
           'repository',
           'homepage',
