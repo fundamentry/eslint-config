@@ -32,6 +32,7 @@ export = {
           'main',
           'module',
           'types',
+          'imports',
           'exports',
           'workspaces',
           'scripts',
