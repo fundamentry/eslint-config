@@ -1,3 +1,9 @@
+## 1.4.7
+
+### 🚀 Features
+
+- **packages/json:** order 'imports' property ([ddfce5d](https://github.com/fundamentry/eslint-config/commit/ddfce5d))
+
 ## 1.4.6
 
 ### 🚀 Features
